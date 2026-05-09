@@ -318,7 +318,7 @@ a {
 }
 
 .hero-heading {
-  font-size: clamp(42px, 12vw, 200px);
+  font-size: clamp(40px, 12vw, 180px);
   font-weight: 900;
   text-transform: uppercase;
   white-space: nowrap;
