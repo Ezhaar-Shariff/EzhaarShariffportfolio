@@ -1,409 +1,379 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ezhaar Shariff | Portfolio</title>
-  <meta name="description" content="Portfolio of Ezhaar Shariff — MCA student, full-stack developer, and AI/ML enthusiast." />
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ezhaar Shariff | Full-Stack Developer & AI Engineer</title>
+  <meta name="description" content="Portfolio of Ezhaar Shariff — MCA student and full-stack developer specializing in AI, machine learning, and web development." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-particles" id="particles"></div>
 
-  <div id="loader"><div class="spinner"></div></div>
-
-  <header id="header">
-    <h1>My Portfolio</h1>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
-    <nav id="navbar">
-      <a href="#home" class="active">Home</a>
+<!-- =============== HERO SECTION =============== -->
+<section class="hero-section" id="home">
+  <nav class="navbar fade-in" data-delay="0">
+    <div class="nav-logo">Ezhaar</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
       <a href="#education">Education</a>
       <a href="#internship">Internship</a>
       <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  </nav>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h2>Hi, I'm <strong>Ezhaar Shariff</strong></h2>
-      <h3><span id="typewriter" class="typewriter"></span></h3>
-      <p>MCA student passionate about Full-Stack Development, AI/ML, and immersive web design. I love crafting experiences that blend logic and creativity.</p>
-      <div class="hero-buttons">
-        <button id="downloadBtn">Download My Resume</button>
-      </div>
-    </div>
-    <img src="myimage.png" alt="Ezhaar Shariff" class="hero-image">
-  </section>
-
-  <section class="section" id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <img src="presidency-university-logo.webp" alt="presidency-university-logo" title="Presidency" style="height: 10%;width: 10%;border-radius: 9px;background-color: whitesmoke;"><h3 style="padding-top: 18px;">MCA — Presidency College</h3>
-      <p>2024 – Present | Bangalore City University</p>
-    </div>
-    <div class="card">
-      <img src="Theoxfordcollegescience.jpg" alt="presidency-university-logo" title="Presidency" style="height: 10%;width: 10%;border-radius: 9px;"><h3 style="padding-top: 18px;">BCA — The Oxford College of Science</h3>
-      <p>2021 – 2024 | CGPA: 8.01 | Bangalore University</p>
-    </div>
-    <div class="card">
-      <img src="surana college.jpeg" alt="presidency-university-logo" title="Presidency" style="height: 10%;width: 10%;border-radius: 9px;"><h3 style="padding-top: 18px;">12th (2nd PUC) — Surana College</h3>
-      <p>2019 – 2021 | 78.89% | Pre-University Board</p>
-    </div>
-  </section>
-
-  <section class="section" id="internship">
-    <h2>Internship</h2>
-    <div class="interactive-card" data-type="internship">
-      <div class="card-preview">
-        <h3>Machine Learning Using Python</h3>
-        <p><strong>Prinston Smart Engineer</strong> | April 2024 – May 2024</p>
-        <p class="tech-stack">Certificate Code: PSEML3083</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <ul>
-          <li>Developed a diamond price prediction model with Linear Regression using scikit-learn</li>
-          <li>Performed data cleaning, missing value imputation (using median) and label encoding for categorical variables</li>
-          <li>Utilized Pandas, NumPy, scikit-learn to construct the end-to-end machine learning pipeline</li>
-          <li>Practically worked on supervised learning, model evaluation, and real-life data preprocessing</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1JId55H8IQxt80An1jFqeA-XBBTHjWABy/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="projects">
-    <h2>Projects</h2>
-    
-    <div class="interactive-card" data-type="project">
-      <div class="card-preview">
-        <h3>E-Commerce Website [Fashion Zone]</h3>
-        <p><strong>May 2024 – June 2024</strong></p>
-        <div class="tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+  <!-- Portrait: real photo in liquid glass circle -->
+  <div class="hero-portrait-wrap" id="magnetTarget">
+    <div class="magnet-inner" id="magnetInner">
+      <div class="portrait-glass-ring">
+        <div class="portrait-glow-outer"></div>
+        <div class="portrait-glass-frame">
+          <img src="Me.jpg" alt="Ezhaar Shariff" class="hero-portrait" />
         </div>
-        <span class="view-more-hint">Click to view details →</span>
       </div>
-      <div class="card-details">
-        <ul>
-          <li>Led system design and architecture, ensuring scalable and maintainable codebase</li>
-          <li>Managed project planning with clear milestones and deliverables</li>
-          <li>Contributed to front-end development including responsive UI design and smooth navigation experience</li>
-          <li>Developed back-end functionalities including data manipulation, server-side scripting, and database integration</li>
-          <li>Implemented user authentication, shopping cart functionality, and order management system</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="project">
-      <div class="card-preview">
-        <h3>Hotel Booking Management System</h3>
-        <p><strong>November 2024</strong> | Course-Based Project</p>
-        <div class="tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS">
-        </div>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <ul>
-          <li>Developed a full-stack hotel booking platform with comprehensive functionalities</li>
-          <li>Implemented room listing with detailed information, images, and availability status</li>
-          <li>Created user registration and authentication system for secure bookings</li>
-          <li>Built booking management system allowing users to view, modify, and cancel reservations</li>
-          <li>Designed admin panel for managing rooms, bookings, and user accounts</li>
-          <li>Utilized PHP for dynamic backend scripting and MySQL for relational data storage</li>
-        </ul>
-        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ca893c57-8e3e-4932-91dd-4f4c317537d6.jpg" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Project
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="certifications">
-    <h2>Certifications</h2>
-
-        <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>Master CNNs with Python: Build, Train & Evaluate Models</h3>
-        <p>EDUCBA(COURSERA) | NOV 2025</p>
-        <p class="tech-stack">Certificate ID: OFJEBA9AAM4M</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Comprehensive course covering:</p>
-        <ul>
-          <li>Gained practical insight into how CNNs interpret and learn from image data.</li>
-          <li>Enhanced understanding of feature extraction and pattern recognition in images.</li>
-          <li>Learned to evaluate and improve CNN model accuracy through experimentation.</li>
-          <li>Applied theoretical concepts of deep learning to hands-on coding exercises.</li>
-        </ul>
-        <a href="https://www.coursera.org/account/accomplishments/verify/OFJEBA9AAM4M" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-    
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>Fullstack Web Development : CSS Javascript and PHP Mastery</h3>
-        <p>Udemy | Oct 2025</p>
-        <p class="tech-stack">Certificate ID: UC-a754f49d-5df2-4c3e-a31c-538f2808df44</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Comprehensive course covering:</p>
-        <ul>
-          <li>Demonstrated end-to-end development mastery across styling, scripting, and server-side logic.</li>
-          <li>Built responsive, user-centric web interfaces leveraging CSS, JavaScript, and PHP</li>
-          <li>Developed a solid foundation in fullstack architecture and code optimization techniques.</li>
-          <li>Showcased commitment to continuous learning through an 18-hour professional certification.</li>
-        </ul>
-        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-a75f4f9d-5df2-4c3e-a31c-538f2808df44.jpg" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>ChatGPT: Mastering the Basics for Beginners</h3>
-        <p>Eduta.org | July 2025</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Comprehensive course covering:</p>
-        <ul>
-          <li>Fundamentals of ChatGPT and large language models</li>
-          <li>Prompt engineering techniques for better responses</li>
-          <li>Practical applications in coding, content creation, and problem-solving</li>
-          <li>Best practices for AI-assisted workflows</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1aQy_cYkNKC_cPn9P-ac4Py8eV6CdsW-m/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>Agile Project Management</h3>
-        <p>HP LIFE | January 2025</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Learned Agile methodologies including:</p>
-        <ul>
-          <li>Scrum framework and ceremonies (sprint planning, daily standups, retrospectives)</li>
-          <li>User story creation and backlog management</li>
-          <li>Collaborative development practices and team dynamics</li>
-          <li>Iterative development and continuous improvement strategies</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1Zi3ooQecmFOhAE3Uud_NBY_ZC-vwsuc-/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>AI for Beginners</h3>
-        <p>HP LIFE | December 2024</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Introduction to Artificial Intelligence covering:</p>
-        <ul>
-          <li>Core AI concepts and machine learning fundamentals</li>
-          <li>AI applications across different industries</li>
-          <li>Automation techniques and intelligent systems</li>
-          <li>Data-driven decision making and predictive analytics</li>
-          <li>Ethical considerations in AI development</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1F1esDueULkEbXkz8P-FcoYVUWj0EI0mL/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>PHP with MySQL: Build Hotel Booking Management System</h3>
-        <p>Udemy | November 2024</p>
-        <p class="tech-stack">Certificate ID: UC-ca893c57-8e3e-4932-91dd-4f4c31f7537d6</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Hands-on course covering full-stack development:</p>
-        <ul>
-          <li>PHP fundamentals and advanced server-side programming</li>
-          <li>MySQL database design, queries, and optimization</li>
-          <li>Building complete booking management system from scratch</li>
-          <li>User authentication and session management</li>
-          <li>CRUD operations and data validation</li>
-          <li>Security best practices for web applications</li>
-        </ul>
-        <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ca893c57-8e3e-4932-91dd-4f4c317537d6.jpg" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>Prinston Web and User Interface Development Workshop</h3>
-        <p>Prinston Smart Engineers | June 2023</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Workshop focused on modern web development:</p>
-        <ul>
-          <li>HTML5, CSS3, and responsive design principles</li>
-          <li>JavaScript fundamentals and DOM manipulation</li>
-          <li>UI/UX design best practices</li>
-          <li>Cross-browser compatibility and performance optimization</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1eYOTZ4DmnuFdaDsqCcUnb0c0_dAT0aIY/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-
-    <div class="interactive-card" data-type="certification">
-      <div class="card-preview">
-        <h3>Workshop: Mastering the Art of Data Science and Gen AI</h3>
-        <p>UPGRADE | June 2023</p>
-        <span class="view-more-hint">Click to view details →</span>
-      </div>
-      <div class="card-details">
-        <p>Comprehensive workshop exploring:</p>
-        <ul>
-          <li>Data Science fundamentals and statistical analysis</li>
-          <li>Introduction to Generative AI and its applications</li>
-          <li>Python libraries for data analysis (Pandas, NumPy, Matplotlib)</li>
-          <li>Real-world case studies and practical implementations</li>
-          <li>Future trends in AI and data-driven technologies</li>
-        </ul>
-        <a href="https://drive.google.com/file/d/1sCXS8ayb2X-3VNTJe2tNx3Igpw0ePzpz/view?usp=sharing" target="_blank" class="drive-link">
-          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" alt="Google Drive"> View Certificate
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="skills">
-    <h2>Technical Skills</h2>
-    
-    <h3 style="color: var(--accent); text-align: center; font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin: 30px 0 20px;">Programming Languages & Technologies</h3>
-      <div class="skills-grid">
-        <div class="skill-item">
-        <img src="https://raw.githubusercontent.com/Francy93/Convolutional_Neural_Network/master/Report/img/logo.png" alt="Java">
-        <p>CNN</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-        <p>Python</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-        <p>Java</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-        <p>C</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-        <p>PHP</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-        <p>HTML</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-        <p>CSS</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-        <p>Bootstrap</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-        <p>MySQL</p>
-      </div>
-      <div class="skill-item">
-        <img src="machine learning.png" alt="Machine Learning">
-        <p>Machine Learning</p>
-      </div>
-    </div>
-
-    <h3 style="color: var(--accent); text-align: center; font-size: clamp(1.1rem, 2.5vw, 1.3rem); margin: 40px 0 20px;">Development Tools</h3>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-        <p>VS Code</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm">
-        <p>PyCharm</p>
-      </div>
-      <div class="skill-item">
-        <img src="colab_favicon_256px.png" alt="google collab">
-        <p>Google Collab</p>
-      </div>
-      <div class="skill-item">
-        <img src="xampp.png" alt="MySQL">
-        <p>Xampp</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-icons">
-      <a href="mailto:ezhaarshariff2004@gmail.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email"> Gmail
-      </a>
-      <a href="https://www.linkedin.com/in/ezhaarshariff/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn
-      </a>
-    </div>
-  </section>
-
-  <button id="backToTop" aria-label="Back to top">↑</button>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
-      <div id="modalBody"></div>
     </div>
   </div>
 
-  <footer>
-    Made by Ezhaar Shariff © 2025
-  </footer>
+  <div class="hero-bottom">
+    <!-- Liquid glass heading -->
+    <div class="hero-heading-glass">
+      <div class="hero-heading-wrap fade-in" data-delay="150">
+        <h1 class="hero-heading">Hi, i'm Ezhaar</h1>
+      </div>
+    </div>
+    <div class="hero-info-bar">
+      <p class="hero-tagline fade-in" data-delay="350">a vibe coder &amp; full-stack developer driven by crafting striking and unforgettable projects</p>
+      <a href="mailto:ezhaarshariff2004@gmail.com" class="contact-btn fade-in" data-delay="500">Let's Talk</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== ABOUT SECTION =============== -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-left fade-in">
+      <span class="about-label">About Me</span>
+      <h2 class="about-name hero-heading-grad">Ezhaar<br/>Shariff</h2>
+      <a href="#contact" class="contact-btn" style="margin-top:8px">Download Resume</a>
+    </div>
+    <div class="about-right">
+      <p class="about-text fade-in" id="aboutText">I'm an MCA student at Presidency College, Bangalore City University &mdash; a <strong style="color:#D7E2EA">vibe coder</strong> who turns ideas into living, breathing digital experiences. I specialize in full-stack development, AI, and machine learning, building end-to-end web apps from database architecture to immersive front-ends. I embrace the vibe coding philosophy &mdash; where intuition, aesthetics, and engineering collide &mdash; using AI-assisted workflows to prototype faster and think bigger. Whether it's a recommendation engine, a booking system, or an AI-powered recipe advisor, I engineer with purpose and ship with style.</p>
+      <div class="about-stats fade-in">
+        <div class="about-stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="about-stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Internship</span>
+        </div>
+        <div class="about-stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+      <div class="about-tags fade-in">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Flask</span>
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">Bootstrap</span>
+        <span class="tag">Vibe Coding</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <div class="about-contact fade-in">
+        <a href="mailto:ezhaarshariff2004@gmail.com" class="contact-btn">Let's Talk</a>
+        <a href="https://www.linkedin.com/in/ezhaarshariff/" target="_blank" class="live-btn">LinkedIn &#8599;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== EDUCATION SECTION =============== -->
+<section class="content-section" id="education">
+  <h2 class="section-heading hero-heading-grad fade-in">Education</h2>
+  <div class="cards-grid">
+    <div class="info-card edu-card fade-in">
+      <img src="presidency-university-logo.webp" alt="Presidency University" class="edu-logo" />
+      <div>
+        <h3>MCA &mdash; Presidency College</h3>
+        <p>2024 &ndash; Present | Bangalore City University</p>
+      </div>
+    </div>
+    <div class="info-card edu-card fade-in">
+      <img src="Theoxfordcollegescience.jpg" alt="Oxford College" class="edu-logo" />
+      <div>
+        <h3>BCA &mdash; The Oxford College of Science</h3>
+        <p>2021 &ndash; 2024 | CGPA: 8.01 | Bangalore University</p>
+      </div>
+    </div>
+    <div class="info-card edu-card fade-in">
+      <img src="surana college.jpeg" alt="Surana College" class="edu-logo" />
+      <div>
+        <h3>12th (2nd PUC) &mdash; Surana College</h3>
+        <p>2019 &ndash; 2021 | 78.89% | Pre-University Board</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== INTERNSHIP SECTION =============== -->
+<section class="projects-section" id="internship" style="padding-top:0;border-radius:0;margin-top:0">
+  <div class="projects-stack">
+    <h2 class="section-heading hero-heading-grad fade-in" style="padding-top:clamp(40px,6vw,80px)">Internship</h2>
+    <div class="glass-card fade-in" tabindex="0">
+      <div class="glass-card-header">
+        <div class="glass-card-meta">
+          <span class="card-num">[01]</span>
+          <span class="card-cat">Machine Learning Intern &nbsp;|&nbsp; April &ndash; May 2024</span>
+        </div>
+        <h3 class="card-title">Machine Learning Using Python</h3>
+        <div class="glass-card-header-row">
+          <div class="card-tech">
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"><span>NumPy</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn"><span>scikit-learn</span></div>
+          </div>
+          <a href="https://drive.google.com/file/d/1JId55H8IQxt80An1jFqeA-XBBTHjWABy/view?usp=sharing" target="_blank" class="live-btn">View Certificate &#8599;</a>
+        </div>
+      </div>
+      <div class="glass-card-body">
+        <p class="card-desc-summary">Completed an industry internship at <strong style="color:#D7E2EA">Prinston Smart Engineer</strong> focused on applied machine learning &mdash; built a real-world diamond price prediction model from data collection through deployment-ready output. Certificate Code: <span style="font-family:monospace;color:rgba(215,226,234,0.6)">PSEML3083</span></p>
+        <ul>
+          <li>Developed a <strong style="color:#D7E2EA">diamond price prediction model</strong> using Linear Regression with scikit-learn</li>
+          <li>Performed comprehensive <strong style="color:#D7E2EA">data preprocessing</strong> &mdash; missing value imputation and label encoding</li>
+          <li>Built an end-to-end ML pipeline using <strong style="color:#D7E2EA">Pandas, NumPy, and scikit-learn</strong></li>
+          <li>Applied <strong style="color:#D7E2EA">train-test splitting, model fitting, and regression metrics</strong> (MSE, R&sup2; score)</li>
+          <li>Gained practical exposure to outliers, skewed distributions, and feature selection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PROJECTS SECTION =============== -->
+<section class="projects-section" id="projects">
+  <h2 class="section-heading hero-heading-grad fade-in">Projects</h2>
+  <div class="projects-stack">
+
+    <!-- PROJECT 01: ChefBot AI -->
+    <div class="glass-card fade-in" tabindex="0">
+      <div class="glass-card-header">
+        <div class="glass-card-meta">
+          <span class="card-num">[01]</span>
+          <span class="card-cat">AI / Machine Learning &nbsp;|&nbsp; April &ndash; June 2026</span>
+        </div>
+        <h3 class="card-title">ChefBot AI &mdash; Intelligent Recipe Recommendation System</h3>
+        <div class="glass-card-header-row">
+          <div class="card-tech">
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap 5</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"><span>Scikit-learn</span></div>
+          </div>
+          <a href="https://ezhaar-shariff.github.io/Chefbot-AI/" target="_blank" class="live-btn">View Presentation &#8599;</a>
+        </div>
+      </div>
+      <div class="glass-card-body">
+        <p class="card-desc-summary">Developed ChefBot AI, a full-stack AI-powered recipe recommendation web app that provides personalized recipe suggestions based on ingredients, dietary preferences, and allergy detection using TF-IDF and Cosine Similarity algorithms.</p>
+        <ul>
+          <li>AI-based recipe recommendation using <strong style="color:#D7E2EA">TF-IDF + Cosine Similarity</strong> for intelligent, personalized results</li>
+          <li>Dietary preference filtering (vegan, gluten-free, etc.) and <strong style="color:#D7E2EA">allergy detection system</strong></li>
+          <li>Built with <strong style="color:#D7E2EA">Flask + Python</strong> backend and MySQL relational database with normalized schema</li>
+          <li>Implemented <strong style="color:#D7E2EA">user authentication, admin dashboard</strong>, recipe rating system, and search history</li>
+          <li>Responsive <strong style="color:#D7E2EA">glassmorphism UI</strong> built with Bootstrap 5, Jinja2, and Font Awesome</li>
+          <li>Additional stack: <strong style="color:#D7E2EA">Pandas, NumPy, HTML5, CSS3, JavaScript (ES6)</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT 02: Fashion Zone -->
+    <div class="glass-card fade-in" tabindex="0">
+      <div class="glass-card-header">
+        <div class="glass-card-meta">
+          <span class="card-num">[02]</span>
+          <span class="card-cat">Web Development &nbsp;|&nbsp; May &ndash; Jun 2024</span>
+        </div>
+        <h3 class="card-title">Fashion Zone E-Commerce</h3>
+        <div class="glass-card-header-row">
+          <div class="card-tech">
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><span>Bootstrap</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+          </div>
+          <span class="expand-hint">Hover to expand &#8595;</span>
+        </div>
+      </div>
+      <div class="glass-card-body">
+        <p class="card-desc-summary">A fully functional full-stack e-commerce platform for a fashion brand with a complete product catalog, user authentication, and order management system.</p>
+        <ul>
+          <li>Led system design and architecture ensuring a scalable, maintainable codebase</li>
+          <li>Built responsive front-end UI with product browsing, filtering, and smooth navigation</li>
+          <li>Implemented user authentication &mdash; register, login, session management</li>
+          <li>Developed shopping cart with add/remove/update functionality and checkout flow</li>
+          <li>Built backend admin panel for managing products, inventory, and user orders</li>
+          <li>Integrated PHP server-side scripting with MySQL for relational data storage</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECT 03: Hotel Booking -->
+    <div class="glass-card fade-in" tabindex="0">
+      <div class="glass-card-header">
+        <div class="glass-card-meta">
+          <span class="card-num">[03]</span>
+          <span class="card-cat">Full-Stack Web App &nbsp;|&nbsp; November 2024</span>
+        </div>
+        <h3 class="card-title">Hotel Booking Management System</h3>
+        <div class="glass-card-header-row">
+          <div class="card-tech">
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+          </div>
+          <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ca893c57-8e3e-4932-91dd-4f4c317537d6.jpg" target="_blank" class="live-btn">View Project &#8599;</a>
+        </div>
+      </div>
+      <div class="glass-card-body">
+        <p class="card-desc-summary">A comprehensive hotel booking web application allowing users to browse rooms, make bookings, and manage reservations &mdash; with a full admin control panel.</p>
+        <ul>
+          <li>Full-stack platform with room listing, availability status and detailed room info</li>
+          <li>Secure user registration &amp; login with PHP sessions for authenticated bookings</li>
+          <li>Booking system &mdash; users can place, view, modify, and cancel reservations</li>
+          <li>Admin panel for managing rooms, user accounts, and all booking records</li>
+          <li>CRUD operations across all entities with server-side validation</li>
+          <li>MySQL relational data storage with normalized schema design</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============== CERTIFICATIONS SECTION =============== -->
+<section class="content-section" id="certifications">
+  <h2 class="section-heading hero-heading-grad fade-in">Certifications</h2>
+  <div class="cards-grid">
+    <div class="info-card cert-card fade-in">
+      <h3>Master CNNs with Python: Build, Train &amp; Evaluate Models</h3>
+      <p class="cert-desc">Learned to build, train and evaluate Convolutional Neural Networks using Python and Keras. Covered layers, pooling, regularization, and real-world image classification use cases.</p>
+      <p>EDUCBA (COURSERA) | NOV 2025</p>
+      <p class="cert-id">ID: OFJEBA9AAM4M</p>
+      <a href="https://www.coursera.org/account/accomplishments/verify/OFJEBA9AAM4M" target="_blank" class="live-btn">Verify &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>Fullstack Web Development: CSS, JavaScript &amp; PHP Mastery</h3>
+      <p class="cert-desc">Mastered full-stack web development covering responsive CSS layouts, JavaScript DOM interactions, PHP server-side scripting, and MySQL database integration for building complete web apps.</p>
+      <p>Udemy | Oct 2025</p>
+      <p class="cert-id">ID: UC-a754f49d-5df2-4c3e-a31c-538f2808df44</p>
+      <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-a75f4f9d-5df2-4c3e-a31c-538f2808df44.jpg" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>ChatGPT: Mastering the Basics for Beginners</h3>
+      <p class="cert-desc">Covered fundamental and practical uses of ChatGPT including prompt engineering, use cases in productivity, content creation, and responsible AI usage for beginners.</p>
+      <p>Eduta.org | July 2025</p>
+      <a href="https://drive.google.com/file/d/1aQy_cYkNKC_cPn9P-ac4Py8eV6CdsW-m/view?usp=sharing" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>Agile Project Management</h3>
+      <p class="cert-desc">Understood Agile principles, Scrum framework, sprint planning, backlog management, and iterative development methodologies used in modern software engineering teams.</p>
+      <p>HP LIFE | January 2025</p>
+      <a href="https://drive.google.com/file/d/1Zi3ooQecmFOhAE3Uud_NBY_ZC-vwsuc-/view?usp=sharing" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>AI for Beginners</h3>
+      <p class="cert-desc">Introduction to Artificial Intelligence concepts including machine learning basics, neural networks, AI applications in business, and ethical considerations in AI development.</p>
+      <p>HP LIFE | December 2024</p>
+      <a href="https://drive.google.com/file/d/1F1esDueULkEbXkz8P-FcoYVUWj0EI0mL/view?usp=sharing" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>PHP with MySQL: Build Hotel Booking Management System</h3>
+      <p class="cert-desc">Built a complete hotel booking management system from scratch using PHP and MySQL &mdash; covering CRUD operations, session management, admin panels, and relational database design.</p>
+      <p>Udemy | November 2024</p>
+      <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ca893c57-8e3e-4932-91dd-4f4c317537d6.jpg" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>Prinston Web &amp; UI Development Workshop</h3>
+      <p class="cert-desc">Hands-on workshop covering HTML5, CSS3, responsive design principles, UI/UX fundamentals, and building interactive web interfaces with modern best practices.</p>
+      <p>Prinston Smart Engineers | June 2023</p>
+      <a href="https://drive.google.com/file/d/1eYOTZ4DmnuFdaDsqCcUnb0c0_dAT0aIY/view?usp=sharing" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+    <div class="info-card cert-card fade-in">
+      <h3>Workshop: Mastering the Art of Data Science &amp; Gen AI</h3>
+      <p class="cert-desc">Workshop on Data Science pipeline fundamentals and Generative AI concepts &mdash; covering data preprocessing, EDA, model building, and emerging Gen AI tools and applications.</p>
+      <p>UPGRADE | June 2023</p>
+      <a href="https://drive.google.com/file/d/1sCXS8ayb2X-3VNTJe2tNx3Igpw0ePzpz/view?usp=sharing" target="_blank" class="live-btn">View &#8599;</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== SKILLS SECTION =============== -->
+<section class="content-section" id="skills">
+  <h2 class="section-heading hero-heading-grad fade-in">Skills</h2>
+  <h3 class="skills-category fade-in">Programming &amp; Technologies</h3>
+  <div class="skills-grid">
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="CNN"><p>CNN</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><p>C</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><p>PHP</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><p>HTML</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><p>CSS</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><p>Bootstrap</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><p>MySQL</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Machine Learning"><p>Machine Learning</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn-icons-png.flaticon.com/512/4028/4028687.png" alt="Vibe Coding"><p>Vibe Coding</p></div>
+  </div>
+  <h3 class="skills-category fade-in">Development Tools</h3>
+  <div class="skills-grid">
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><p>VS Code</p></div>
+    <div class="skill-item fade-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm"><p>PyCharm</p></div>
+    <div class="skill-item fade-in"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colab"><p>Google Colab</p></div>
+    <div class="skill-item fade-in"><img src="https://www.svgrepo.com/show/354575/xampp.svg" alt="XAMPP"><p>XAMPP</p></div>
+  </div>
+</section>
+
+<!-- =============== CONTACT SECTION =============== -->
+<section class="content-section contact-section" id="contact">
+  <h2 class="section-heading hero-heading-grad fade-in">Contact Me</h2>
+  <p class="contact-sub fade-in">Let's create something incredible together.</p>
+  <div class="contact-links fade-in">
+    <a href="mailto:ezhaarshariff2004@gmail.com" target="_blank" class="contact-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" />
+      <span>Gmail</span>
+    </a>
+    <a href="https://www.linkedin.com/in/ezhaarshariff/" target="_blank" class="contact-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+      <span>LinkedIn</span>
+    </a>
+    <a href="Resumeezhaar.pdf" download class="contact-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Resume" />
+      <span>Resume</span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p>Made by Ezhaar Shariff &copy; 2025</p>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
 <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
